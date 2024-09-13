@@ -21,18 +21,19 @@ public class MainActivity extends AppCompatActivity {
         btnRed = findViewById(R.id.btnRed);
         btnResult = findViewById(R.id.btnResult);
 
+        redClicks = 0;
+        blueClicks = 0;
+
         btnBlue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 blueClicks++;
-                btnBlue.setText("" + blueClicks);
             }
         });
         btnRed.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View v) {
-                redClicks++;
-                btnRed.setText("" + redClicks);
+                redClicks += 2;
                 return false;
             }
         });
@@ -44,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
         si.putExtra("redClicks",redClicks);
         si.putExtra("blueClicks",blueClicks);
         startActivity(si);
-
+        redClicks = 0;
+        blueClicks = 0;
     }
 }
