@@ -2,6 +2,7 @@ package com.example.ex081_listeners;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -35,6 +36,14 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         });
+
+    }
+
+    public void resultSrceen(View view) {
+        Intent si = new Intent(this,ResultGameActivity.class);
+        si.putExtra("redClicks",redClicks);
+        si.putExtra("blueClicks",blueClicks);
+        startActivity(si);
 
     }
 }

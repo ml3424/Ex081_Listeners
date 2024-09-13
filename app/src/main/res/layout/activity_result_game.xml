@@ -9,42 +9,49 @@
 
     <Button
         android:id="@+id/btnBackToGame"
-        android:layout_width="170dp"
-        android:layout_height="100dp"
+        android:layout_width="180dp"
+        android:layout_height="112dp"
         android:layout_marginStart="125dp"
+        android:layout_marginTop="382dp"
         android:layout_marginEnd="126dp"
-        android:layout_marginBottom="64dp"
+        android:layout_marginBottom="80dp"
         android:backgroundTint="#65E8AC13"
+        android:onClick="backToGame"
         android:text="back to game!"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tVWhoWon" />
 
     <TextView
         android:id="@+id/tVRed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="62dp"
-        tools:layout_editor_absoluteY="201dp" />
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="50dp"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tVWhoWon" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tVBlue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="268dp"
-        tools:layout_editor_absoluteY="194dp" />
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="90dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tVWhoWon" />
 
     <TextView
         android:id="@+id/tVWhoWon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="108dp"
-        android:layout_marginTop="65dp"
+        android:layout_marginTop="48dp"
         android:layout_marginEnd="108dp"
-        android:text="TextView"
+        android:text="Results:\nred            blue"
         android:textSize="48sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
